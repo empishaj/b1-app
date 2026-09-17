@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.17.1",
+  "publishedAt": "2026-09-17T20:45:00+02:00",
+  "title": "B1 Startpaket",
+  "message": "Neue Lerninhalte sind verfügbar.",
+  "releaseNotes": [
+    "Grundbestand für Grammatik, Wortschatz, Lesen, Hören, Schreiben und Sprechen",
+    "Prüfungssimulation und Fehlerbuch",
+    "Deutsch-Albanische Hilfen"
+  ],
+  "counts": {
+    "Grammatik": 43,
+    "Wortschatz": 44,
+    "Lesen": 31,
+    "Hören": 13,
+    "Schreiben": 15,
+    "Sprechen": 15
+  },
+  "contentUrl": "./content/b1-content.json",
+  "minAppVersion": "3.0.0",
+  "force": false
+}

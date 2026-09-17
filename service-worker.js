@@ -1,4 +1,4 @@
-const CACHE_NAME = 'b1-deutsch-trainer-v1';
+const CACHE_NAME = 'b1-deutsch-trainer-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,7 +6,8 @@ const APP_SHELL = [
   './icons/icon-32.png',
   './icons/icon-180.png',
   './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icons/icon-512.png',
+  './content/b1-content.json'
 ];
 
 self.addEventListener('install', event => {
@@ -30,6 +31,11 @@ self.addEventListener('fetch', event => {
 
   const url = new URL(event.request.url);
   if(url.origin !== self.location.origin) return;
+
+  if(url.pathname.endsWith('/content/version.json')){
+    event.respondWith(fetch(event.request, {cache:'no-store'}));
+    return;
+  }
 
   if(event.request.mode === 'navigate'){
     event.respondWith(

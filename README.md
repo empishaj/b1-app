@@ -1,41 +1,59 @@
-# B1 Deutsch Trainer – PWA
+# B1 Deutsch Trainer – PWA mit Content-Update-System
 
-Diese Version ist eine installierbare Progressive Web App (PWA).
+Die App muss nach der ersten Installation nicht neu installiert werden. Lerninhalte werden getrennt vom App-Code verwaltet.
 
-## Funktionen der PWA
-- installierbar auf Android und iPhone/iPad
-- eigener Startbildschirm-Eintrag
-- Standalone-Darstellung ohne Browser-Chrome
-- Offline-Nutzung nach dem ersten erfolgreichen Laden
-- lokaler Lernfortschritt und Fehlerbuch über localStorage
-- Online-/Offline-Status in der App
-- Installationshilfe in der Startansicht
+## Relevante Dateien
 
-## Wichtig
-Eine PWA muss über **HTTPS** oder `localhost` ausgeliefert werden.
-Das direkte Öffnen von `index.html` über `file://` reicht für Service Worker und Installation nicht.
+- `content/b1-content.json` – alle Lerninhalte
+- `content/version.json` – Versionsmeldung und Release Notes
+- `index.html` – App und Update-Logik
+- `service-worker.js` – Offline-PWA
 
-## GitHub Pages – Kurzweg
-1. Neues GitHub-Repository anlegen, z. B. `b1-deutsch-trainer`.
-2. Den **Inhalt dieses Ordners** in das Repository hochladen.
-3. Repository → **Settings** → **Pages**.
-4. Unter *Build and deployment*:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Speichern.
-6. Nach kurzer Zeit erscheint die HTTPS-Adresse der App.
-7. Diesen Link auf dem Smartphone öffnen.
+## Neue Inhalte veröffentlichen
 
-## Android / Chrome
-- App-Link öffnen.
-- In der App auf **App installieren** tippen, wenn der Button aktiv ist.
-- Alternativ Chrome-Menü → **App installieren** / **Zum Startbildschirm hinzufügen**.
+1. `content/b1-content.json` erweitern oder austauschen.
+2. In `content/version.json` unbedingt `contentVersion` erhöhen.
+3. Optional Titel, Nachricht, Release Notes und Zähler anpassen.
+4. Commit + Push auf GitHub.
+5. GitHub Pages veröffentlicht das Update.
+6. Die installierte App prüft beim Start und später regelmäßig `version.json` ohne Cache.
+7. Der Nutzer sieht **NEUE INHALTE** und kann **Jetzt aktualisieren** oder **Später** wählen.
+8. Beim Update bleiben Lernfortschritt und Fehlerbuch erhalten.
 
-## iPhone / iPad
-- App-Link in **Safari** öffnen.
-- Teilen-Symbol → **Zum Home-Bildschirm** → **Hinzufügen**.
+## Beispiel version.json
 
-## Lernstand
-Der Lernstand wird lokal auf dem jeweiligen Gerät und Browser gespeichert.
-Ein späterer Gerätewechsel überträgt den Stand aktuell noch nicht automatisch.
+```json
+{
+  "contentVersion": "2026.09.18.1",
+  "publishedAt": "2026-09-18T10:00:00+02:00",
+  "title": "Update: Arbeit & Behörden",
+  "message": "35 neue Übungen sind verfügbar.",
+  "releaseNotes": [
+    "20 neue Aufgaben zu Arbeit und Beruf",
+    "10 neue Behörden-Dialoge",
+    "5 neue Schreibaufgaben"
+  ],
+  "counts": {
+    "Grammatik": 50,
+    "Wortschatz": 60,
+    "Lesen": 40,
+    "Hören": 20,
+    "Schreiben": 20,
+    "Sprechen": 20
+  },
+  "contentUrl": "./content/b1-content.json",
+  "minAppVersion": "3.0.0",
+  "force": false
+}
+```
+
+## Offline
+
+Die zuletzt erfolgreich installierte Inhaltsversion bleibt offline nutzbar. Falls ein Update fehlschlägt, bleibt die bisherige Version aktiv.
+
+## Versionsschema
+
+- App-Code: z. B. `3.0.0`
+- Inhalte: Datum + laufende Nummer, z. B. `2026.09.18.1`
+
+GitHub Pages: `https://empishaj.github.io/b1-app/`
