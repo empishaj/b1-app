@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 1,
-    "contentVersion": "2026.09.17.1",
+    "contentVersion": "2026.09.17.2",
     "language": "de",
     "supportLanguage": "sq",
-    "title": "B1 Startpaket",
-    "description": "Grundbestand der B1-Lerninhalte"
+    "title": "Lernpaket 2 – Alltag & Integration",
+    "description": "Erweiterung mit 108 neuen B1-Übungen zu Arbeit, Behörden, Gesundheit, Wohnen, Mobilität, digitalem Alltag und Prüfungssituationen."
   },
   "grammar": [
     [
@@ -523,6 +523,366 @@
       ],
       0,
       "„versuchen, ... zu + Infinitiv“."
+    ],
+    [
+      "Nebensätze – weil",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich gehe früher, weil ich einen Termin habe.",
+        "Ich gehe früher, weil ich habe einen Termin.",
+        "Weil ich einen Termin habe, ich gehe früher."
+      ],
+      0,
+      "Nach „weil“ steht das konjugierte Verb am Ende des Nebensatzes."
+    ],
+    [
+      "Nebensätze – obwohl",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Obwohl es regnet, gehen wir spazieren.",
+        "Obwohl es regnet, wir gehen spazieren.",
+        "Obwohl regnet es, gehen wir spazieren."
+      ],
+      0,
+      "Im obwohl-Satz steht das Verb am Ende; der Hauptsatz beginnt danach mit dem Verb."
+    ],
+    [
+      "Nebensätze – dass",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich hoffe, dass du morgen kommen kannst.",
+        "Ich hoffe, dass du kannst morgen kommen.",
+        "Ich hoffe, du dass morgen kommen kannst."
+      ],
+      0,
+      "Nach „dass“ steht das konjugierte Verb am Ende."
+    ],
+    [
+      "Indirekte Frage – ob",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich weiß nicht, ob der Bus noch fährt.",
+        "Ich weiß nicht, ob fährt der Bus noch.",
+        "Ich weiß nicht, der Bus ob noch fährt."
+      ],
+      0,
+      "Indirekte Ja-/Nein-Fragen werden mit „ob“ gebildet; das Verb steht am Ende."
+    ],
+    [
+      "Wenn-Satz",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Wenn ich Zeit habe, besuche ich dich.",
+        "Wenn ich habe Zeit, besuche ich dich.",
+        "Wenn ich Zeit habe, ich besuche dich."
+      ],
+      0,
+      "Im wenn-Satz steht das Verb am Ende; im folgenden Hauptsatz steht das Verb direkt nach dem Nebensatz."
+    ],
+    [
+      "Konjunktiv II – höflich",
+      "Welche Bitte klingt höflich und korrekt?",
+      "Cila kërkesë tingëllon e sjellshme dhe e saktë?",
+      [
+        "Könnten Sie mir bitte helfen?",
+        "Können Sie mir bitte geholfen?",
+        "Könnten Sie bitte mir geholfen?"
+      ],
+      0,
+      "„Könnten Sie …?“ ist eine typische höfliche Bitte."
+    ],
+    [
+      "Konjunktiv II – Wunsch",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich würde gern näher am Zentrum wohnen.",
+        "Ich werde gern näher am Zentrum wohnen würde.",
+        "Ich würde gern näher am Zentrum gewohnt."
+      ],
+      0,
+      "„würde + Infinitiv“ kann einen Wunsch ausdrücken."
+    ],
+    [
+      "Passiv Präsens",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Der Antrag wird heute bearbeitet.",
+        "Der Antrag ist heute bearbeiten.",
+        "Der Antrag wird heute bearbeitet worden."
+      ],
+      0,
+      "Passiv Präsens: werden + Partizip II."
+    ],
+    [
+      "Passiv Präteritum",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Die Straße wurde gestern gesperrt.",
+        "Die Straße wird gestern gesperrt.",
+        "Die Straße wurde gestern sperren."
+      ],
+      0,
+      "Passiv Präteritum: wurde/wurden + Partizip II."
+    ],
+    [
+      "Perfekt",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Wir haben die Rechnung schon bezahlt.",
+        "Wir sind die Rechnung schon bezahlt.",
+        "Wir haben die Rechnung schon bezahlen."
+      ],
+      0,
+      "Perfekt mit „haben“ + Partizip II: bezahlt."
+    ],
+    [
+      "Perfekt mit sein",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Sie ist gestern nach Berlin gefahren.",
+        "Sie hat gestern nach Berlin gefahren.",
+        "Sie ist gestern nach Berlin gefahrt."
+      ],
+      0,
+      "Bei Ortsveränderung wird häufig „sein“ verwendet: ist gefahren."
+    ],
+    [
+      "Präteritum – Modalverb",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich musste gestern länger arbeiten.",
+        "Ich gemusst gestern länger arbeiten.",
+        "Ich musste gestern länger gearbeitet."
+      ],
+      0,
+      "Modalverben werden in Erzählungen oft im Präteritum verwendet."
+    ],
+    [
+      "Infinitiv mit zu",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich versuche, pünktlich zu kommen.",
+        "Ich versuche, zu pünktlich kommen.",
+        "Ich versuche, pünktlich kommen zu."
+      ],
+      0,
+      "Bei „versuchen“ folgt meist „zu + Infinitiv“."
+    ],
+    [
+      "um … zu",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich lerne Deutsch, um eine bessere Arbeit zu finden.",
+        "Ich lerne Deutsch, um finde eine bessere Arbeit.",
+        "Ich lerne Deutsch, eine bessere Arbeit um zu finden."
+      ],
+      0,
+      "„um … zu“ drückt einen Zweck aus."
+    ],
+    [
+      "Relativsatz – der",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Der Mann, der dort wartet, ist mein Nachbar.",
+        "Der Mann, den dort wartet, ist mein Nachbar.",
+        "Der Mann, der wartet dort, ist mein Nachbar."
+      ],
+      0,
+      "Das Relativpronomen ist Subjekt: „der“; das Verb steht am Ende des Relativsatzes."
+    ],
+    [
+      "Relativsatz – den",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Der Kollege, den ich gestern getroffen habe, arbeitet hier.",
+        "Der Kollege, der ich gestern getroffen habe, arbeitet hier.",
+        "Der Kollege, den ich habe gestern getroffen, arbeitet hier."
+      ],
+      0,
+      "Das Relativpronomen ist Akkusativobjekt: „den“."
+    ],
+    [
+      "Relativsatz – dem",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Der Mann, mit dem ich gesprochen habe, war sehr freundlich.",
+        "Der Mann, mit den ich gesprochen habe, war sehr freundlich.",
+        "Der Mann, dem mit ich gesprochen habe, war sehr freundlich."
+      ],
+      0,
+      "Nach „mit“ steht Dativ: mit dem."
+    ],
+    [
+      "Adjektivdeklination",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich suche eine ruhige Wohnung.",
+        "Ich suche eine ruhig Wohnung.",
+        "Ich suche einen ruhige Wohnung."
+      ],
+      0,
+      "Nach „eine“ erhält das Adjektiv im Akkusativ Femininum die Endung -e."
+    ],
+    [
+      "Adjektivdeklination",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Wir wohnen in einem alten Haus.",
+        "Wir wohnen in einem altem Haus.",
+        "Wir wohnen in einen alten Haus."
+      ],
+      0,
+      "Nach „einem“ steht das Adjektiv im Dativ mit -en."
+    ],
+    [
+      "Wechselpräposition",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich stelle die Tasche auf den Tisch.",
+        "Ich stelle die Tasche auf dem Tisch.",
+        "Ich stelle der Tasche auf den Tisch."
+      ],
+      0,
+      "Bei Richtung/Bewegung steht nach „auf“ Akkusativ: auf den Tisch."
+    ],
+    [
+      "Wechselpräposition",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Die Tasche liegt auf dem Tisch.",
+        "Die Tasche liegt auf den Tisch.",
+        "Die Tasche liegt an dem Tisch hin."
+      ],
+      0,
+      "Bei Ort/Lage steht nach „auf“ Dativ: auf dem Tisch."
+    ],
+    [
+      "Verben mit Präposition",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Ich warte auf den Bus.",
+        "Ich warte für den Bus.",
+        "Ich warte an den Bus."
+      ],
+      0,
+      "„warten“ wird mit „auf + Akkusativ“ verwendet."
+    ],
+    [
+      "Verben mit Präposition",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Sie interessiert sich für den Kurs.",
+        "Sie interessiert sich an den Kurs.",
+        "Sie interessiert für sich den Kurs."
+      ],
+      0,
+      "„sich interessieren für + Akkusativ“."
+    ],
+    [
+      "Verben mit Präposition",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Wir nehmen an der Besprechung teil.",
+        "Wir nehmen auf der Besprechung teil.",
+        "Wir teilnehmen an der Besprechung."
+      ],
+      0,
+      "„teilnehmen an + Dativ“ ist trennbar: wir nehmen … teil."
+    ],
+    [
+      "Temporale Präposition",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Seit einem Jahr lerne ich Deutsch.",
+        "Für einem Jahr lerne ich Deutsch.",
+        "Seit ein Jahr lerne ich Deutsch."
+      ],
+      0,
+      "„seit“ verlangt Dativ und beschreibt einen Zeitraum bis heute."
+    ],
+    [
+      "Temporaler Nebensatz",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Bevor ich zur Arbeit gehe, frühstücke ich.",
+        "Bevor ich gehe zur Arbeit, frühstücke ich.",
+        "Bevor zur Arbeit ich gehe, ich frühstücke."
+      ],
+      0,
+      "Nach „bevor“ steht das Verb am Ende des Nebensatzes."
+    ],
+    [
+      "Komparativ",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Der Zug ist schneller als der Bus.",
+        "Der Zug ist mehr schnell als der Bus.",
+        "Der Zug ist schneller wie der Bus."
+      ],
+      0,
+      "Vergleich bei Ungleichheit: Komparativ + als."
+    ],
+    [
+      "Superlativ",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Diese Verbindung ist am günstigsten.",
+        "Diese Verbindung ist am günstigster.",
+        "Diese Verbindung ist die günstigsten."
+      ],
+      0,
+      "Prädikativer Superlativ: am + Adjektiv + -sten."
+    ],
+    [
+      "Pronomen",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Kannst du mir die Adresse schicken?",
+        "Kannst du mich die Adresse schicken?",
+        "Kannst du ich die Adresse schicken?"
+      ],
+      0,
+      "Bei „jemandem etwas schicken“ steht die Person im Dativ: mir."
+    ],
+    [
+      "Satzstellung mit deshalb",
+      "Welche Form ist richtig?",
+      "Cila formë është e saktë?",
+      [
+        "Der Bus fällt aus. Deshalb komme ich später.",
+        "Der Bus fällt aus. Deshalb ich komme später.",
+        "Der Bus fällt aus. Deshalb später ich komme."
+      ],
+      0,
+      "Nach „deshalb“ folgt im Hauptsatz direkt das konjugierte Verb."
     ]
   ],
   "vocab": [
@@ -1053,6 +1413,486 @@
       ],
       0,
       "Typische Redemittel zur Meinungsäußerung."
+    ],
+    [
+      "Arbeit & Beruf",
+      "Was bedeutet „Bewerbungsgespräch“?",
+      "Çfarë do të thotë „Bewerbungsgespräch“?",
+      [
+        "Gespräch mit einem Arbeitgeber vor einer möglichen Einstellung",
+        "Gespräch mit der Krankenkasse",
+        "Besprechung über eine Mietwohnung"
+      ],
+      0,
+      "Ein Bewerbungsgespräch ist ein Interview für eine Arbeitsstelle."
+    ],
+    [
+      "Arbeit & Beruf",
+      "Was bedeutet „Stellenanzeige“?",
+      "Çfarë do të thotë „Stellenanzeige“?",
+      [
+        "Anzeige für eine freie Arbeitsstelle",
+        "Liste der Urlaubstage",
+        "Rechnung des Arbeitgebers"
+      ],
+      0,
+      "In einer Stellenanzeige wird eine freie Stelle beschrieben."
+    ],
+    [
+      "Arbeit & Beruf",
+      "Was bedeutet „befristet“?",
+      "Çfarë do të thotë „befristet“?",
+      [
+        "Nur für einen bestimmten Zeitraum",
+        "Ohne Arbeitsvertrag",
+        "Nur nachts"
+      ],
+      0,
+      "Ein befristeter Vertrag endet zu einem festgelegten Zeitpunkt."
+    ],
+    [
+      "Arbeit & Beruf",
+      "Was bedeutet „Kündigungsfrist“?",
+      "Çfarë do të thotë „Kündigungsfrist“?",
+      [
+        "Zeitraum zwischen Kündigung und Vertragsende",
+        "Dauer der Mittagspause",
+        "Zeit bis zur Gehaltszahlung"
+      ],
+      0,
+      "Die Kündigungsfrist bestimmt, wann ein Vertrag nach einer Kündigung endet."
+    ],
+    [
+      "Arbeit & Beruf",
+      "Was bedeutet „Überstunden“?",
+      "Çfarë do të thotë „Überstunden“?",
+      [
+        "Arbeitszeit über die vereinbarte Zeit hinaus",
+        "Unbezahlter Urlaub",
+        "Arbeitsweg"
+      ],
+      0,
+      "Überstunden sind zusätzliche Arbeitsstunden."
+    ],
+    [
+      "Behörde & Dokumente",
+      "Was bedeutet „Antrag stellen“?",
+      "Çfarë do të thotë „einen Antrag stellen“?",
+      [
+        "Etwas offiziell beantragen",
+        "Einen Termin absagen",
+        "Eine Rechnung bezahlen"
+      ],
+      0,
+      "Einen Antrag stellen heißt, eine Leistung oder Entscheidung offiziell zu beantragen."
+    ],
+    [
+      "Behörde & Dokumente",
+      "Was bedeutet „Nachweis“?",
+      "Çfarë do të thotë „Nachweis“?",
+      [
+        "Dokument oder Information, die etwas belegt",
+        "Werbung einer Firma",
+        "Persönliche Meinung"
+      ],
+      0,
+      "Ein Nachweis belegt eine Angabe, zum Beispiel Einkommen oder Wohnsitz."
+    ],
+    [
+      "Behörde & Dokumente",
+      "Was bedeutet „Frist“?",
+      "Çfarë do të thotë „Frist“?",
+      [
+        "Zeitraum, bis zu dessen Ende etwas erledigt sein muss",
+        "Gebühr für einen Antrag",
+        "Öffnungszeit eines Geschäfts"
+      ],
+      0,
+      "Eine Frist nennt den letzten möglichen Zeitpunkt."
+    ],
+    [
+      "Behörde & Dokumente",
+      "Was bedeutet „Unterlagen nachreichen“?",
+      "Çfarë do të thotë „Unterlagen nachreichen“?",
+      [
+        "Fehlende Dokumente später zusätzlich einreichen",
+        "Dokumente vernichten",
+        "Den Antrag zurückziehen"
+      ],
+      0,
+      "Nachreichen bedeutet, fehlende Unterlagen später einzureichen."
+    ],
+    [
+      "Behörde & Dokumente",
+      "Was bedeutet „Bescheid“?",
+      "Çfarë do të thotë „Bescheid“?",
+      [
+        "Schriftliche Entscheidung einer Behörde",
+        "Privater Brief an Freunde",
+        "Fahrplan"
+      ],
+      0,
+      "Ein Bescheid enthält eine offizielle behördliche Entscheidung."
+    ],
+    [
+      "Gesundheit",
+      "Was bedeutet „Überweisung“ beim Arzt?",
+      "Çfarë do të thotë „Überweisung“ te mjeku?",
+      [
+        "Dokument für die Behandlung bei einem anderen Arzt oder Facharzt",
+        "Bankzahlung",
+        "Rezept für Lebensmittel"
+      ],
+      0,
+      "Eine ärztliche Überweisung führt häufig zu einem Facharzt."
+    ],
+    [
+      "Gesundheit",
+      "Was bedeutet „Krankschreibung“?",
+      "Çfarë do të thotë „Krankschreibung“?",
+      [
+        "Ärztliche Bescheinigung über Arbeitsunfähigkeit",
+        "Rechnung der Apotheke",
+        "Impfpass"
+      ],
+      0,
+      "Die Krankschreibung bestätigt, dass man vorübergehend nicht arbeiten kann."
+    ],
+    [
+      "Gesundheit",
+      "Was bedeutet „Nebenwirkung“?",
+      "Çfarë do të thotë „Nebenwirkung“?",
+      [
+        "Zusätzliche, oft unerwünschte Wirkung eines Medikaments",
+        "Hauptursache einer Krankheit",
+        "Preis eines Medikaments"
+      ],
+      0,
+      "Nebenwirkungen können zusätzlich zur gewünschten Wirkung auftreten."
+    ],
+    [
+      "Gesundheit",
+      "Was bedeutet „Vorsorgeuntersuchung“?",
+      "Çfarë do të thotë „Vorsorgeuntersuchung“?",
+      [
+        "Untersuchung zur frühen Erkennung von Krankheiten",
+        "Operation nach einem Unfall",
+        "Notfallbehandlung"
+      ],
+      0,
+      "Vorsorge dient dazu, gesundheitliche Probleme früh zu erkennen."
+    ],
+    [
+      "Gesundheit",
+      "Was bedeutet „rezeptpflichtig“?",
+      "Çfarë do të thotë „rezeptpflichtig“?",
+      [
+        "Nur mit ärztlichem Rezept erhältlich",
+        "Nur im Internet erhältlich",
+        "Kostenlos erhältlich"
+      ],
+      0,
+      "Rezeptpflichtige Medikamente bekommt man nur mit einem Rezept."
+    ],
+    [
+      "Wohnen",
+      "Was bedeutet „Kaution“?",
+      "Çfarë do të thotë „Kaution“?",
+      [
+        "Sicherheitsleistung für den Vermieter",
+        "Monatliche Stromrechnung",
+        "Makleranzeige"
+      ],
+      0,
+      "Die Mietkaution dient dem Vermieter als Sicherheit."
+    ],
+    [
+      "Wohnen",
+      "Was bedeutet „Hausordnung“?",
+      "Çfarë do të thotë „Hausordnung“?",
+      [
+        "Regeln für das Zusammenleben im Gebäude",
+        "Rechnung für Möbel",
+        "Grundriss der Wohnung"
+      ],
+      0,
+      "Die Hausordnung enthält Regeln für Bewohner eines Hauses."
+    ],
+    [
+      "Wohnen",
+      "Was bedeutet „Mängel melden“?",
+      "Çfarë do të thotë „Mängel melden“?",
+      [
+        "Schäden oder Probleme mitteilen",
+        "Miete erhöhen",
+        "Wohnung kündigen"
+      ],
+      0,
+      "Ein Mangel ist ein Defekt oder Problem, das man dem Vermieter melden kann."
+    ],
+    [
+      "Wohnen",
+      "Was bedeutet „Warmmiete“?",
+      "Çfarë do të thotë „Warmmiete“?",
+      [
+        "Miete einschließlich bestimmter Nebenkosten",
+        "Nur die Grundmiete ohne Nebenkosten",
+        "Kaution und Maklergebühr"
+      ],
+      0,
+      "Warmmiete ist die Kaltmiete plus umlagefähige Nebenkosten, häufig inklusive Heizkosten."
+    ],
+    [
+      "Wohnen",
+      "Was bedeutet „Wohnungsübergabe“?",
+      "Çfarë do të thotë „Wohnungsübergabe“?",
+      [
+        "Termin zur Übergabe oder Rückgabe der Wohnung",
+        "Besichtigung eines Möbelhauses",
+        "Anmeldung beim Arzt"
+      ],
+      0,
+      "Bei der Wohnungsübergabe werden Zustand und Schlüssel dokumentiert."
+    ],
+    [
+      "Mobilität",
+      "Was bedeutet „Umleitung“?",
+      "Çfarë do të thotë „Umleitung“?",
+      [
+        "Alternative Strecke wegen einer Sperrung",
+        "Fahrkarte für zwei Personen",
+        "Endhaltestelle"
+      ],
+      0,
+      "Eine Umleitung führt den Verkehr über einen anderen Weg."
+    ],
+    [
+      "Mobilität",
+      "Was bedeutet „Anschluss verpassen“?",
+      "Çfarë do të thotë „den Anschluss verpassen“?",
+      [
+        "Das nächste Verkehrsmittel nicht rechtzeitig erreichen",
+        "Eine Fahrkarte verlieren",
+        "Zu früh aussteigen"
+      ],
+      0,
+      "Wer den Anschluss verpasst, erreicht den nächsten Zug oder Bus nicht rechtzeitig."
+    ],
+    [
+      "Mobilität",
+      "Was bedeutet „Verspätung“?",
+      "Çfarë do të thotë „Verspätung“?",
+      [
+        "Später als geplant ankommen oder abfahren",
+        "Früher als geplant abfahren",
+        "Fahrt absagen"
+      ],
+      0,
+      "Verspätung bedeutet, dass etwas später als vorgesehen geschieht."
+    ],
+    [
+      "Mobilität",
+      "Was bedeutet „Gleiswechsel“?",
+      "Çfarë do të thotë „Gleiswechsel“?",
+      [
+        "Der Zug fährt von einem anderen Gleis",
+        "Der Zug wird schneller",
+        "Die Fahrkarte wird teurer"
+      ],
+      0,
+      "Bei einem Gleiswechsel ändert sich der Abfahrtsbahnsteig."
+    ],
+    [
+      "Mobilität",
+      "Was bedeutet „Fahrgemeinschaft“?",
+      "Çfarë do të thotë „Fahrgemeinschaft“?",
+      [
+        "Mehrere Personen fahren gemeinsam in einem Fahrzeug",
+        "Gruppe von Fahrkartenkontrolleuren",
+        "Firma für Autovermietung"
+      ],
+      0,
+      "Eine Fahrgemeinschaft teilt eine Fahrt, oft auch die Kosten."
+    ],
+    [
+      "Digitale Welt",
+      "Was bedeutet „Anhang“ in einer E-Mail?",
+      "Çfarë do të thotë „Anhang“ në një e-mail?",
+      [
+        "Mitgesendete Datei",
+        "Betreff der E-Mail",
+        "Passwort des Postfachs"
+      ],
+      0,
+      "Ein Anhang ist eine Datei, die zusammen mit einer E-Mail gesendet wird."
+    ],
+    [
+      "Digitale Welt",
+      "Was bedeutet „Zugangsdaten“?",
+      "Çfarë do të thotë „Zugangsdaten“?",
+      [
+        "Daten zum Anmelden, zum Beispiel Benutzername und Passwort",
+        "Adresse einer Bushaltestelle",
+        "Telefonnummer einer Behörde"
+      ],
+      0,
+      "Zugangsdaten ermöglichen den Zugriff auf ein Konto oder System."
+    ],
+    [
+      "Digitale Welt",
+      "Was bedeutet „Datenschutz“?",
+      "Çfarë do të thotë „Datenschutz“?",
+      [
+        "Schutz personenbezogener Daten",
+        "Schutz eines Fahrrads",
+        "Speicherung aller Daten ohne Regeln"
+      ],
+      0,
+      "Datenschutz regelt den verantwortungsvollen Umgang mit personenbezogenen Daten."
+    ],
+    [
+      "Digitale Welt",
+      "Was bedeutet „Bestätigungsmail“?",
+      "Çfarë do të thotë „Bestätigungsmail“?",
+      [
+        "E-Mail, die einen Vorgang bestätigt",
+        "Werbeprospekt per Post",
+        "Automatische Telefonansage"
+      ],
+      0,
+      "Eine Bestätigungsmail bestätigt zum Beispiel Anmeldung, Bestellung oder Termin."
+    ],
+    [
+      "Digitale Welt",
+      "Was bedeutet „Passwort zurücksetzen“?",
+      "Çfarë do të thotë „Passwort zurücksetzen“?",
+      [
+        "Ein neues Passwort festlegen, weil das alte nicht genutzt werden kann",
+        "Das Benutzerkonto löschen",
+        "Den Computer ausschalten"
+      ],
+      0,
+      "Beim Zurücksetzen wird ein neues Passwort eingerichtet."
+    ],
+    [
+      "Bildung",
+      "Was bedeutet „Teilnahmebescheinigung“?",
+      "Çfarë do të thotë „Teilnahmebescheinigung“?",
+      [
+        "Dokument, das die Teilnahme an einem Kurs bestätigt",
+        "Prüfungsaufgabe",
+        "Schulferienplan"
+      ],
+      0,
+      "Die Bescheinigung bestätigt die Teilnahme an einer Veranstaltung oder einem Kurs."
+    ],
+    [
+      "Bildung",
+      "Was bedeutet „Anmeldefrist“?",
+      "Çfarë do të thotë „Anmeldefrist“?",
+      [
+        "Letzter Zeitraum für eine Anmeldung",
+        "Dauer der Prüfung",
+        "Zeit einer Pause"
+      ],
+      0,
+      "Bis zum Ende der Anmeldefrist muss die Anmeldung erfolgt sein."
+    ],
+    [
+      "Bildung",
+      "Was bedeutet „Prüfung ablegen“?",
+      "Çfarë do të thotë „eine Prüfung ablegen“?",
+      [
+        "Eine Prüfung machen",
+        "Eine Prüfung verschieben",
+        "Eine Prüfung korrigieren"
+      ],
+      0,
+      "„Eine Prüfung ablegen“ bedeutet, an einer Prüfung teilzunehmen."
+    ],
+    [
+      "Bildung",
+      "Was bedeutet „Voraussetzung“?",
+      "Çfarë do të thotë „Voraussetzung“?",
+      [
+        "Bedingung, die erfüllt sein muss",
+        "Ergebnis einer Prüfung",
+        "Unterrichtspause"
+      ],
+      0,
+      "Eine Voraussetzung muss vorher erfüllt sein."
+    ],
+    [
+      "Bildung",
+      "Was bedeutet „Kursgebühr“?",
+      "Çfarë do të thotë „Kursgebühr“?",
+      [
+        "Preis für die Teilnahme an einem Kurs",
+        "Gehalt einer Lehrkraft",
+        "Kosten einer Fahrkarte"
+      ],
+      0,
+      "Die Kursgebühr ist der zu zahlende Preis für einen Kurs."
+    ],
+    [
+      "Alltag & Finanzen",
+      "Was bedeutet „Dauerauftrag“?",
+      "Çfarë do të thotë „Dauerauftrag“?",
+      [
+        "Regelmäßig automatisch ausgeführte Banküberweisung",
+        "Einmalige Barzahlung",
+        "Kreditkarte"
+      ],
+      0,
+      "Ein Dauerauftrag überweist regelmäßig einen festgelegten Betrag."
+    ],
+    [
+      "Alltag & Finanzen",
+      "Was bedeutet „Lastschrift“?",
+      "Çfarë do të thotë „Lastschrift“?",
+      [
+        "Erlaubnis, einen Betrag vom Konto einzuziehen",
+        "Bareinzahlung",
+        "Sparvertrag"
+      ],
+      0,
+      "Bei einer Lastschrift wird ein Betrag vom Konto eingezogen."
+    ],
+    [
+      "Alltag & Finanzen",
+      "Was bedeutet „Mahnung“?",
+      "Çfarë do të thotë „Mahnung“?",
+      [
+        "Aufforderung, eine offene Rechnung zu bezahlen",
+        "Bestätigung einer Zahlung",
+        "Rabattgutschein"
+      ],
+      0,
+      "Eine Mahnung erinnert an eine noch nicht bezahlte Forderung."
+    ],
+    [
+      "Alltag & Finanzen",
+      "Was bedeutet „Rückerstattung“?",
+      "Çfarë do të thotë „Rückerstattung“?",
+      [
+        "Geld wird zurückgezahlt",
+        "Preis wird erhöht",
+        "Konto wird gesperrt"
+      ],
+      0,
+      "Bei einer Rückerstattung erhält man bereits gezahltes Geld zurück."
+    ],
+    [
+      "Alltag & Finanzen",
+      "Was bedeutet „Quittung“?",
+      "Çfarë do të thotë „Quittung“?",
+      [
+        "Beleg über eine Zahlung",
+        "Antrag auf Urlaub",
+        "Einladung zu einem Termin"
+      ],
+      0,
+      "Eine Quittung bestätigt, dass eine Zahlung erfolgt ist."
     ]
   ],
   "readingSets": [
@@ -1313,6 +2153,115 @@
           "Selbst reparieren soll man ausdrücklich nicht."
         ]
       ]
+    },
+    {
+      "part": 1,
+      "title": "Lesen Teil 1 – Neuer Arbeitsplatz",
+      "text": "Seit drei Wochen arbeitet Mirela in einem mittelgroßen Hotel. Am Anfang war sie nervös, weil sie viele neue Namen und Abläufe lernen musste. Besonders schwierig fand sie das Computerprogramm an der Rezeption. Eine Kollegin zeigte ihr jeden Nachmittag die wichtigsten Funktionen. Inzwischen kann Mirela Gäste selbstständig einchecken und Rechnungen vorbereiten. Nur bei Beschwerden bittet sie noch manchmal um Hilfe. Nächsten Monat nimmt sie an einer internen Schulung zum Thema Kundenkommunikation teil.",
+      "qs": [
+        [
+          "Mirela arbeitet seit drei Monaten im Hotel.",
+          [
+            "Richtig",
+            "Falsch"
+          ],
+          1,
+          "Im Text steht: seit drei Wochen."
+        ],
+        [
+          "Das Computerprogramm war für Mirela am Anfang schwierig.",
+          [
+            "Richtig",
+            "Falsch"
+          ],
+          0,
+          "Das wird ausdrücklich erwähnt."
+        ],
+        [
+          "Eine Kollegin unterstützte sie regelmäßig.",
+          [
+            "Richtig",
+            "Falsch"
+          ],
+          0,
+          "Die Kollegin zeigte ihr jeden Nachmittag wichtige Funktionen."
+        ],
+        [
+          "Mirela kann heute noch keine Rechnungen vorbereiten.",
+          [
+            "Richtig",
+            "Falsch"
+          ],
+          1,
+          "Sie kann Rechnungen inzwischen vorbereiten."
+        ],
+        [
+          "Mirela besucht bald eine Schulung.",
+          [
+            "Richtig",
+            "Falsch"
+          ],
+          0,
+          "Die Schulung ist für den nächsten Monat geplant."
+        ]
+      ]
+    },
+    {
+      "part": 2,
+      "title": "Lesen Teil 2 – Stadtbibliothek erweitert Angebot",
+      "text": "Die Stadtbibliothek Nord erweitert ab Oktober ihre Öffnungszeiten. Von Montag bis Freitag ist sie künftig bis 20 Uhr geöffnet, samstags bis 16 Uhr. Gleichzeitig startet ein neues digitales Angebot: Mitglieder können E-Books und Hörbücher über eine App ausleihen. Für die Nutzung ist ein gültiger Bibliotheksausweis nötig. Wer Hilfe bei der Einrichtung der App braucht, kann dienstags zwischen 17 und 19 Uhr ohne Anmeldung zur Techniksprechstunde kommen. Die Jahresgebühr bleibt unverändert.",
+      "qs": [
+        [
+          "Was ändert sich ab Oktober?",
+          [
+            "Die Bibliothek öffnet länger.",
+            "Die Bibliothek schließt samstags.",
+            "Die Jahresgebühr wird teurer."
+          ],
+          0,
+          "Die Öffnungszeiten werden erweitert."
+        ],
+        [
+          "Was kann man über die neue App ausleihen?",
+          [
+            "Nur gedruckte Bücher",
+            "E-Books und Hörbücher",
+            "Computer"
+          ],
+          1,
+          "Genannt werden E-Books und Hörbücher."
+        ],
+        [
+          "Was braucht man für das digitale Angebot?",
+          [
+            "Einen gültigen Bibliotheksausweis",
+            "Eine Kreditkarte",
+            "Eine Anmeldung bei der Stadtverwaltung"
+          ],
+          0,
+          "Ein gültiger Bibliotheksausweis ist erforderlich."
+        ],
+        [
+          "Wann findet die Techniksprechstunde statt?",
+          [
+            "Dienstags am frühen Abend",
+            "Jeden Samstagvormittag",
+            "Montags bis freitags morgens"
+          ],
+          0,
+          "Dienstags zwischen 17 und 19 Uhr."
+        ],
+        [
+          "Wie verändert sich die Jahresgebühr?",
+          [
+            "Sie steigt.",
+            "Sie sinkt.",
+            "Sie bleibt gleich."
+          ],
+          2,
+          "Im Text steht: Die Jahresgebühr bleibt unverändert."
+        ]
+      ]
     }
   ],
   "adsSets": [
@@ -1381,6 +2330,43 @@
         [
           "5",
           "Reisebüro Sonnenklar – Flüge, Hotels und Mietwagen."
+        ]
+      ],
+      "answers": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      }
+    },
+    {
+      "title": "Lesen Teil 3 – Alltag und Dienstleistungen",
+      "situations": [
+        "A. Luan braucht am Samstag Hilfe, weil sein Fahrrad nicht mehr bremst.",
+        "B. Eda möchte einen Termin bei einer Behörde online vereinbaren.",
+        "C. Arjan sucht einen Deutschkurs am Abend mit Schwerpunkt Beruf.",
+        "D. Vjollca möchte gebrauchte Möbel günstig kaufen."
+      ],
+      "ads": [
+        [
+          "1",
+          "Fahrradwerkstatt Schnellrad – Reparaturen Montag bis Samstag, kleine Reparaturen oft am selben Tag."
+        ],
+        [
+          "2",
+          "Bürger-Service Online – Termine für Meldeamt und Ausweis bequem im Internet reservieren."
+        ],
+        [
+          "3",
+          "Deutsch im Beruf B1/B2 – Abendkurs Dienstag und Donnerstag, 18:00–20:15 Uhr."
+        ],
+        [
+          "4",
+          "Sozialkaufhaus Mitte – geprüfte gebrauchte Möbel, Haushaltswaren und Lieferung gegen Aufpreis."
+        ],
+        [
+          "5",
+          "Sprachcafé am Sonntag – kostenlose Gespräche in lockerer Atmosphäre, keine Berufssprache."
         ]
       ],
       "answers": {
@@ -1544,6 +2530,102 @@
       ],
       2,
       "Herr Dervishi nennt die schlechte Busverbindung."
+    ],
+    [
+      "Hören Teil 1",
+      "Achtung auf Gleis 7. Der Regionalexpress nach Hannover fährt heute wegen einer technischen Störung etwa 20 Minuten später ab. Reisende nach Bremen nutzen bitte den Zug auf Gleis 5.",
+      "Was erfahren die Reisenden?",
+      [
+        "Der Regionalexpress hat Verspätung.",
+        "Der Zug nach Hannover fällt aus.",
+        "Alle Züge fahren von Gleis 7."
+      ],
+      0,
+      "Der Regionalexpress fährt etwa 20 Minuten später."
+    ],
+    [
+      "Hören Teil 1",
+      "Guten Tag, hier ist die Hausverwaltung. Wegen Arbeiten an der Wasserleitung wird morgen zwischen acht und zwölf Uhr das Wasser im Gebäude abgestellt. Bitte planen Sie entsprechend.",
+      "Warum ruft die Hausverwaltung an?",
+      [
+        "Das Wasser wird zeitweise abgestellt.",
+        "Die Miete wird erhöht.",
+        "Die Heizung wird heute repariert."
+      ],
+      0,
+      "Morgen wird zwischen 8 und 12 Uhr das Wasser abgestellt."
+    ],
+    [
+      "Hören Teil 2",
+      "Mann: Hast du die Unterlagen für den Kurs schon abgeschickt? Frau: Fast. Mir fehlt nur noch die Kopie meines Sprachzertifikats. Die schicke ich heute Abend per E-Mail. Mann: Gut, die Anmeldefrist endet nämlich morgen.",
+      "Was muss die Frau noch tun?",
+      [
+        "Eine Kopie des Sprachzertifikats schicken.",
+        "Die Kursgebühr bar bezahlen.",
+        "Ein neues Zertifikat machen."
+      ],
+      0,
+      "Ihr fehlt nur noch die Kopie des Sprachzertifikats."
+    ],
+    [
+      "Hören Teil 2",
+      "Frau: Entschuldigung, ich habe für 14 Uhr einen Termin bei Frau Keller. Mann: Frau Keller ist heute leider krank. Ich kann Ihnen aber morgen um 10 Uhr einen Ersatztermin anbieten. Frau: Morgen Vormittag passt gut.",
+      "Was passiert?",
+      [
+        "Der Termin wird auf morgen verschoben.",
+        "Die Frau wartet bis 14 Uhr.",
+        "Frau Keller kommt später."
+      ],
+      0,
+      "Es wird ein Ersatztermin für morgen vereinbart."
+    ],
+    [
+      "Hören Teil 3",
+      "In unserem Gesundheitsmagazin geht es heute um Bewegung im Alltag. Experten empfehlen, nicht nur beim Sport aktiv zu sein. Schon Treppensteigen, kurze Wege zu Fuß und regelmäßige Pausen vom Sitzen können helfen. Wichtig ist, dass Bewegung regelmäßig Teil des Tages wird.",
+      "Was ist die Hauptaussage?",
+      [
+        "Regelmäßige Bewegung lässt sich in den Alltag integrieren.",
+        "Nur intensiver Sport ist gesund.",
+        "Man sollte im Alltag möglichst wenig laufen."
+      ],
+      0,
+      "Der Beitrag betont regelmäßige Alltagsbewegung."
+    ],
+    [
+      "Hören Teil 3",
+      "Die Stadt informiert: Ab nächster Woche können Anträge auf Bewohnerparkausweise vollständig online gestellt werden. Die notwendigen Nachweise werden als Datei hochgeladen. Wer keinen Internetzugang hat, kann weiterhin einen Termin im Bürgerbüro vereinbaren.",
+      "Was ist neu?",
+      [
+        "Der Bewohnerparkausweis kann online beantragt werden.",
+        "Das Bürgerbüro wird geschlossen.",
+        "Nachweise sind nicht mehr nötig."
+      ],
+      0,
+      "Der Antrag kann künftig vollständig online gestellt werden."
+    ],
+    [
+      "Hören Teil 4",
+      "Moderatorin: Viele Firmen bieten inzwischen Homeoffice an. Herr Brandt, was ist dabei wichtig? Experte: Klare Absprachen. Mitarbeitende sollten wissen, wann sie erreichbar sein müssen und welche Aufgaben Priorität haben. Außerdem braucht man Pausen, sonst arbeitet man schnell länger als geplant.",
+      "Was empfiehlt der Experte?",
+      [
+        "Klare Absprachen und geregelte Pausen.",
+        "Im Homeoffice ständig erreichbar zu sein.",
+        "Nur abends zu arbeiten."
+      ],
+      0,
+      "Er nennt klare Absprachen und Pausen als wichtig."
+    ],
+    [
+      "Hören Teil 4",
+      "Moderator: Frau Seidel, warum nutzen immer mehr Menschen Carsharing? Frau Seidel: Viele brauchen ein Auto nur gelegentlich. Dann kann Carsharing günstiger sein als ein eigenes Auto. Allerdings sollte man vorher Preise und verfügbare Fahrzeuge in der eigenen Gegend vergleichen.",
+      "Was sagt Frau Seidel?",
+      [
+        "Carsharing kann für gelegentliche Fahrten sinnvoll sein.",
+        "Ein eigenes Auto ist immer günstiger.",
+        "Carsharing gibt es nur in kleinen Städten."
+      ],
+      0,
+      "Für gelegentliche Nutzung kann Carsharing günstiger sein."
     ]
   ],
   "writings": [
@@ -1755,6 +2837,113 @@
         "höflich",
         "Gruß"
       ]
+    ],
+    [
+      "Aufgabe 1 – E-Mail an Vermieter",
+      "In deiner Wohnung funktioniert die Heizung seit zwei Tagen nicht richtig. Schreibe deinem Vermieter. Beschreibe das Problem, erkläre die Folgen und bitte um einen Reparaturtermin.",
+      "Shkruaji pronarit: përshkruaj problemin me ngrohjen, pasojat dhe kërko një termin riparimi.",
+      80,
+      [
+        "Anrede",
+        "Problem genau beschreiben",
+        "Folgen nennen",
+        "Termin/Reparatur erbitten",
+        "Gruß"
+      ]
+    ],
+    [
+      "Aufgabe 1 – Termin verschieben",
+      "Du kannst einen wichtigen Termin bei einer Beratungsstelle nicht wahrnehmen. Schreibe eine E-Mail. Nenne den Grund, entschuldige dich und schlage zwei neue Termine vor.",
+      "Shkruaj për të shtyrë takimin: arsyeja, kërkim faljeje dhe dy termine të reja.",
+      80,
+      [
+        "Anrede",
+        "Termin nennen",
+        "Grund",
+        "Entschuldigung",
+        "zwei Alternativen",
+        "Gruß"
+      ]
+    ],
+    [
+      "Aufgabe 1 – Kursinformation",
+      "Du interessierst dich für einen beruflichen Deutschkurs. Schreibe an die Sprachschule und frage nach Beginn, Zeiten, Kosten und Voraussetzungen.",
+      "Pyet shkollën e gjuhës për fillimin, oraret, çmimin dhe kushtet.",
+      80,
+      [
+        "Anrede",
+        "Interesse erklären",
+        "Beginn fragen",
+        "Zeiten fragen",
+        "Kosten/Voraussetzungen",
+        "Gruß"
+      ]
+    ],
+    [
+      "Aufgabe 2 – Meinung",
+      "In einem Forum wird diskutiert: „Sollten Geschäfte sonntags häufiger geöffnet sein?“ Schreibe deine Meinung, nenne Gründe und ein Beispiel.",
+      "Jep mendimin tënd për hapjen e dyqaneve të dielave, me arsye dhe shembull.",
+      80,
+      [
+        "klare Meinung",
+        "mindestens zwei Gründe",
+        "Beispiel",
+        "Gegenargument berücksichtigen",
+        "Schluss"
+      ]
+    ],
+    [
+      "Aufgabe 2 – Meinung",
+      "Thema: „Online-Unterricht oder Unterricht im Klassenzimmer?“ Schreibe einen Forumsbeitrag mit deiner Meinung und Erfahrungen.",
+      "Shkruaj një postim: mësim online apo në klasë, me mendim dhe përvojë.",
+      80,
+      [
+        "Einleitung",
+        "eigene Position",
+        "Vorteil",
+        "Nachteil",
+        "persönliches Beispiel",
+        "Schluss"
+      ]
+    ],
+    [
+      "Aufgabe 2 – Meinung",
+      "Thema: „Sollte man für kurze Wege auf das Auto verzichten?“ Begründe deine Meinung und nenne Alternativen.",
+      "A duhet të heqim dorë nga makina për rrugë të shkurtra? Jep arsye dhe alternativa.",
+      80,
+      [
+        "Position",
+        "Gründe",
+        "Alternativen",
+        "Beispiel",
+        "Schluss"
+      ]
+    ],
+    [
+      "Aufgabe 3 – Entschuldigung",
+      "Du hast eine Einladung zu einer Feier angenommen, kannst aber kurzfristig nicht kommen. Schreibe eine kurze Nachricht mit Entschuldigung, Grund und einem Vorschlag für ein anderes Treffen.",
+      "Kërko falje që nuk mund të shkosh në festë, jep arsyen dhe propozo një takim tjetër.",
+      50,
+      [
+        "Anrede",
+        "Entschuldigung",
+        "Grund",
+        "neuer Vorschlag",
+        "Gruß"
+      ]
+    ],
+    [
+      "Aufgabe 3 – Reklamation",
+      "Du hast online einen Wasserkocher bestellt. Er ist beschädigt angekommen. Schreibe dem Kundenservice kurz, beschreibe den Schaden und sage, welche Lösung du möchtest.",
+      "Shkruaj shërbimit të klientit: përshkruaj dëmtimin dhe zgjidhjen që dëshiron.",
+      60,
+      [
+        "Bestellung nennen",
+        "Schaden beschreiben",
+        "gewünschte Lösung",
+        "höfliche Bitte",
+        "Gruß"
+      ]
     ]
   ],
   "speaking": [
@@ -1932,6 +3121,105 @@
         "Feedback",
         "Inhalt",
         "Frage"
+      ]
+    ],
+    [
+      "Teil 1 – gemeinsam planen",
+      "Ihr möchtet für euren Deutschkurs ein gemeinsames Frühstück organisieren. Sprecht über Termin, Ort, Essen/Getränke, Kosten und Aufgaben.",
+      "Planifikoni një mëngjes të përbashkët: koha, vendi, ushqimi/pijet, kostot, detyrat.",
+      [
+        "Vorschlag machen",
+        "nach Meinung fragen",
+        "Aufgaben verteilen",
+        "Kompromiss finden",
+        "Entscheidung zusammenfassen"
+      ]
+    ],
+    [
+      "Teil 1 – gemeinsam planen",
+      "Ein Freund zieht um und ihr möchtet helfen. Plant gemeinsam den Umzug: Tag, Transport, Helfer, Werkzeug und Essen.",
+      "Planifikoni ndihmën për shpërngulje: dita, transporti, ndihmësit, veglat, ushqimi.",
+      [
+        "Vorschläge",
+        "zustimmen/ablehnen",
+        "begründen",
+        "Aufgaben verteilen",
+        "Ergebnis festhalten"
+      ]
+    ],
+    [
+      "Teil 1 – gemeinsam planen",
+      "Euer Kurs möchte einen Ausflug in eine andere Stadt machen. Plant Ziel, Anreise, Programm, Budget und Treffpunkt.",
+      "Planifikoni një ekskursion të kursit: destinacioni, udhëtimi, programi, buxheti, pika e takimit.",
+      [
+        "Ideen nennen",
+        "Vor- und Nachteile",
+        "nachfragen",
+        "Kompromiss",
+        "Entscheidung"
+      ]
+    ],
+    [
+      "Teil 2 – Thema präsentieren",
+      "Thema: „Mein Weg, Deutsch zu lernen“. Berichte über deine Methoden, Schwierigkeiten, Fortschritte und Ziele.",
+      "Tema: Si mësoj gjermanishten – metodat, vështirësitë, përparimi dhe qëllimet.",
+      [
+        "Einleitung",
+        "Methoden",
+        "Schwierigkeit",
+        "persönliches Beispiel",
+        "Ziel",
+        "Schluss"
+      ]
+    ],
+    [
+      "Teil 2 – Thema präsentieren",
+      "Thema: „Arbeiten von zu Hause“. Nenne Vor- und Nachteile und deine persönliche Meinung.",
+      "Tema: Puna nga shtëpia – avantazhet, disavantazhet dhe mendimi yt.",
+      [
+        "Thema vorstellen",
+        "Vorteile",
+        "Nachteile",
+        "eigene Meinung",
+        "Beispiel",
+        "Schluss"
+      ]
+    ],
+    [
+      "Teil 2 – Thema präsentieren",
+      "Thema: „Öffentliche Verkehrsmittel“. Sprich über Nutzung, Vorteile, Probleme und Verbesserungen.",
+      "Tema: Transporti publik – përdorimi, avantazhet, problemet dhe përmirësimet.",
+      [
+        "Einleitung",
+        "Erfahrung",
+        "Vorteil",
+        "Problem",
+        "Verbesserungsvorschlag",
+        "Schluss"
+      ]
+    ],
+    [
+      "Teil 3 – reagieren und nachfragen",
+      "Dein Gesprächspartner hat über gesunde Ernährung gesprochen. Stelle zwei passende Fragen und äußere deine Meinung.",
+      "Partneri foli për ushqimin e shëndetshëm. Bëj dy pyetje dhe jep mendimin tënd.",
+      [
+        "inhaltlich reagieren",
+        "zwei Fragen",
+        "eigene Erfahrung",
+        "zustimmen oder widersprechen",
+        "höflich formulieren"
+      ]
+    ],
+    [
+      "Teil 3 – reagieren und nachfragen",
+      "Dein Gesprächspartner hat über soziale Medien gesprochen. Reagiere auf seine Präsentation und stelle Fragen zu Nutzung und Datenschutz.",
+      "Partneri foli për rrjetet sociale. Reago dhe pyet për përdorimin dhe mbrojtjen e të dhënave.",
+      [
+        "Bezug zur Präsentation",
+        "Frage zur Nutzung",
+        "Frage zum Datenschutz",
+        "eigene Meinung",
+        "höflicher Abschluss"
       ]
     ]
   ],

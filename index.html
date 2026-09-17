@@ -74,6 +74,19 @@ footer{max-width:1150px;margin:auto;padding:0 18px 35px;color:var(--muted);font-
 .update-count{background:#f0fdf4;color:#166534;padding:5px 8px;border-radius:8px;font-size:12px}
 .toast{position:fixed;right:18px;bottom:18px;max-width:360px;background:#111827;color:white;padding:14px 16px;border-radius:12px;box-shadow:0 10px 35px rgba(0,0,0,.25);z-index:1000}
 
+
+.required-update-overlay{position:fixed;inset:0;background:rgba(15,23,42,.82);backdrop-filter:blur(6px);z-index:5000;display:flex;align-items:center;justify-content:center;padding:18px}
+.required-update-overlay.hidden{display:none}
+.required-update-modal{width:min(620px,100%);max-height:90vh;overflow:auto;background:white;border-radius:22px;padding:24px;box-shadow:0 28px 90px rgba(0,0,0,.38);border:3px solid #22c55e}
+.required-update-modal h2{margin:8px 0 8px;font-size:28px}
+.required-update-hero{font-size:54px;line-height:1;margin:2px 0 10px}
+.required-update-number{font-size:36px;font-weight:900;color:#15803d;margin:10px 0 2px}
+.required-update-sub{color:#475569;margin-bottom:14px}
+.required-update-note{background:#f0fdf4;border:1px solid #86efac;border-radius:12px;padding:10px 12px;margin-top:12px}
+.update-required-badge{display:inline-block;background:#166534;color:white;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900;letter-spacing:.04em}
+@keyframes updatePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+.update-pulse{animation:updatePulse 1.6s ease-in-out infinite}
+
 </style>
 </head>
 <body>
@@ -95,6 +108,23 @@ footer{max-width:1150px;margin:auto;padding:0 18px 35px;color:var(--muted);font-
 </div>
 </header>
 
+
+<div id="requiredUpdateOverlay" class="required-update-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="requiredUpdateTitle">
+  <div class="required-update-modal">
+    <div class="required-update-hero">📚</div>
+    <span class="update-required-badge">ERFORDERLICHES LERNPAKET</span>
+    <h2 id="requiredUpdateTitle">Neue B1-Inhalte verfügbar</h2>
+    <div id="requiredUpdateMessage"></div>
+    <div id="requiredUpdateNumber" class="required-update-number"></div>
+    <div class="required-update-sub">Die App selbst bleibt installiert. Nur die Lerninhalte werden erneuert.</div>
+    <div id="requiredUpdateCounts" class="update-counts"></div>
+    <div id="requiredUpdateNotes" class="update-details"></div>
+    <div id="requiredUpdateError" class="translation hidden" style="margin-top:12px"></div>
+    <button id="requiredUpdateButton" class="btn update-pulse" style="margin-top:14px;width:100%" onclick="installContentUpdate()">Jetzt Lernpaket aktualisieren</button>
+    <div class="required-update-note"><b>Keine Sorge:</b> Lernfortschritt, Statistik und Fehlerbuch bleiben erhalten.</div>
+  </div>
+</div>
+
 <main class="wrap">
 <section id="home" class="view">
   <div class="grid">
@@ -113,8 +143,8 @@ footer{max-width:1150px;margin:auto;padding:0 18px 35px;color:var(--muted);font-
     <div id="updateCounts" class="update-counts"></div>
     <div id="updateNotes" class="update-details"></div>
     <div class="row" style="margin-top:12px">
-      <button class="btn" onclick="installContentUpdate()">Jetzt aktualisieren</button>
-      <button class="btn secondary" onclick="postponeContentUpdate()">Später</button>
+      <button id="contentUpdateButton" class="btn" onclick="installContentUpdate()">Jetzt aktualisieren</button>
+      <button id="postponeUpdateButton" class="btn secondary" onclick="postponeContentUpdate()">Später</button>
     </div>
   </div>
 
@@ -256,7 +286,7 @@ footer{max-width:1150px;margin:auto;padding:0 18px 35px;color:var(--muted);font-
 
 <script>
 let DATA = null;
-const APP_VERSION = '3.0.0';
+const APP_VERSION = '3.1.0';
 const CONTENT_CACHE = 'b1-content-data';
 let remoteContentManifest = null;
 let pendingContentManifest = null;
@@ -462,14 +492,38 @@ function validateContentPack(pack){
 function renderUpdateNotice(manifest){
   pendingContentManifest = manifest;
   const card=document.getElementById('contentUpdateCard');
-  if(!card) return;
+  const force=manifest.force===true;
+  const totalNew=Number(manifest.newItems||0);
+  const delta=manifest.delta||{};
+  const countHtml=Object.entries(delta).length
+    ? Object.entries(delta).map(([k,v])=>`<span class="update-count">+${v} ${esc(k)}</span>`).join('')
+    : Object.entries(manifest.counts||{}).map(([k,v])=>`<span class="update-count">${esc(k)}: ${v}</span>`).join('');
+  const notesHtml='<b>Was ist neu?</b><ul class="check">'+(manifest.releaseNotes||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+
   updateTitle.textContent = manifest.title || 'Neue Lerninhalte verfügbar';
   updateMessage.textContent = manifest.message || ('Content-Version '+manifest.contentVersion+' ist verfügbar.');
-  updateCounts.innerHTML = Object.entries(manifest.counts||{}).map(([k,v])=>`<span class="update-count">${esc(k)}: ${v}</span>`).join('');
-  updateNotes.innerHTML = '<b>Was ist neu?</b><ul class="check">'+(manifest.releaseNotes||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><small>Dein Lernstand und Fehlerbuch bleiben erhalten.</small>';
-  card.classList.remove('hidden');
+  updateCounts.innerHTML = countHtml;
+  updateNotes.innerHTML = notesHtml+'<small>Dein Lernstand und Fehlerbuch bleiben erhalten.</small>';
+  if(card) card.classList.remove('hidden');
+
+  const postpone=document.getElementById('postponeUpdateButton');
+  if(postpone) postpone.classList.toggle('hidden',force);
+
+  if(force){
+    const overlay=document.getElementById('requiredUpdateOverlay');
+    requiredUpdateTitle.textContent=manifest.title || 'Neue B1-Inhalte verfügbar';
+    requiredUpdateMessage.textContent=manifest.message || 'Ein neues Lernpaket ist verfügbar.';
+    requiredUpdateNumber.textContent=totalNew ? ('+'+totalNew+' neue Übungen') : 'Neue Lerninhalte';
+    requiredUpdateCounts.innerHTML=countHtml;
+    requiredUpdateNotes.innerHTML=notesHtml;
+    requiredUpdateError.classList.add('hidden');
+    overlay.classList.remove('hidden');
+  }
 }
-function hideUpdateNotice(){ const card=document.getElementById('contentUpdateCard'); if(card) card.classList.add('hidden'); }
+function hideUpdateNotice(){
+  const card=document.getElementById('contentUpdateCard'); if(card) card.classList.add('hidden');
+  const overlay=document.getElementById('requiredUpdateOverlay'); if(overlay) overlay.classList.add('hidden');
+}
 function showToast(msg){
   const old=document.querySelector('.toast'); if(old) old.remove();
   const t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);
@@ -477,24 +531,35 @@ function showToast(msg){
 }
 async function installContentUpdate(){
   if(!pendingContentManifest) return;
+  const manifest=pendingContentManifest;
+  const requiredBtn=document.getElementById('requiredUpdateButton');
+  const normalBtn=document.getElementById('contentUpdateButton');
   try{
-    const fresh=await fetchContentPack(pendingContentManifest);
+    if(requiredBtn){ requiredBtn.disabled=true; requiredBtn.textContent='Update wird geladen …'; }
+    if(normalBtn){ normalBtn.disabled=true; normalBtn.textContent='Update wird geladen …'; }
+    const fresh=await fetchContentPack(manifest);
     DATA=fresh;
-    localStorage.setItem('b1ContentVersion',pendingContentManifest.contentVersion);
+    localStorage.setItem('b1ContentVersion',manifest.contentVersion);
     localStorage.setItem('b1ContentUpdatedAt',new Date().toISOString());
     localStorage.removeItem('b1PostponedVersion');
     initializeContentUI();
     hideUpdateNotice();
-    document.getElementById('versionInfo').textContent='App '+APP_VERSION+' · Inhalte '+pendingContentManifest.contentVersion;
-    showToast('Neue Lerninhalte wurden installiert. Dein Lernstand bleibt erhalten.');
+    document.getElementById('versionInfo').textContent='App '+APP_VERSION+' · Inhalte '+manifest.contentVersion;
+    showToast('Lernpaket '+manifest.contentVersion+' installiert: '+(manifest.newItems||'neue')+' neue Übungen.');
     pendingContentManifest=null;
   }catch(e){
-    showToast('Update konnte nicht geladen werden. Die bisherige Version bleibt aktiv.');
+    const err=document.getElementById('requiredUpdateError');
+    if(err){ err.textContent='Das Update konnte nicht geladen werden. Bitte Internetverbindung prüfen und erneut versuchen.'; err.classList.remove('hidden'); }
+    showToast('Update konnte nicht geladen werden. Bitte erneut versuchen.');
     console.error(e);
+  }finally{
+    if(requiredBtn){ requiredBtn.disabled=false; requiredBtn.textContent='Jetzt Lernpaket aktualisieren'; }
+    if(normalBtn){ normalBtn.disabled=false; normalBtn.textContent='Jetzt aktualisieren'; }
   }
 }
 function postponeContentUpdate(){
-  if(pendingContentManifest) localStorage.setItem('b1PostponedVersion',pendingContentManifest.contentVersion);
+  if(!pendingContentManifest || pendingContentManifest.force===true) return;
+  localStorage.setItem('b1PostponedVersion',pendingContentManifest.contentVersion);
   hideUpdateNotice();
 }
 async function checkForContentUpdates(showEvenIfPostponed=false){
@@ -506,7 +571,7 @@ async function checkForContentUpdates(showEvenIfPostponed=false){
     remoteContentManifest=manifest;
     const installed=localStorage.getItem('b1ContentVersion');
     const postponed=localStorage.getItem('b1PostponedVersion');
-    if(installed && manifest.contentVersion!==installed && (showEvenIfPostponed || postponed!==manifest.contentVersion)) renderUpdateNotice(manifest);
+    if(installed && manifest.contentVersion!==installed && (manifest.force===true || showEvenIfPostponed || postponed!==manifest.contentVersion)) renderUpdateNotice(manifest);
   }catch(e){ console.warn('Updateprüfung nicht möglich',e); }
 }
 async function loadInitialContent(){
@@ -537,10 +602,14 @@ window.addEventListener('online',()=>checkForContentUpdates(false));
 document.addEventListener('visibilitychange',()=>{
   if(document.visibilityState==='visible'){
     const last=Number(localStorage.getItem('b1LastUpdateCheck')||0);
-    if(Date.now()-last>6*60*60*1000){ localStorage.setItem('b1LastUpdateCheck',String(Date.now())); checkForContentUpdates(false); }
+    if(Date.now()-last>60*60*1000){ localStorage.setItem('b1LastUpdateCheck',String(Date.now())); checkForContentUpdates(false); }
   }
 });
 loadInitialContent();
+setInterval(()=>checkForContentUpdates(false),60*60*1000);
+window.addEventListener('load',()=>{
+  if('serviceWorker' in navigator){ navigator.serviceWorker.getRegistration().then(r=>{ if(r) r.update(); }).catch(()=>{}); }
+});
 
 // ---------- PWA / Offline / Installation ----------
 let deferredInstallPrompt = null;

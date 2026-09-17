@@ -1,23 +1,36 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026.09.17.1",
-  "publishedAt": "2026-09-17T20:45:00+02:00",
-  "title": "B1 Startpaket",
-  "message": "Neue Lerninhalte sind verfügbar.",
+  "contentVersion": "2026.09.17.2",
+  "publishedAt": "2026-09-17T21:29:00+02:00",
+  "title": "Lernpaket 2 ist da",
+  "message": "108 neue B1-Übungen warten auf dich. Dieses Inhaltsupdate ist erforderlich, damit du mit der aktuellen Aufgabensammlung trainierst.",
   "releaseNotes": [
-    "Grundbestand für Grammatik, Wortschatz, Lesen, Hören, Schreiben und Sprechen",
-    "Prüfungssimulation und Fehlerbuch",
-    "Deutsch-Albanische Hilfen"
+    "30 neue Grammatikaufgaben: Nebensätze, Passiv, Relativsätze, Konjunktiv II, Präpositionen und Satzstellung",
+    "40 neue Wortschatzaufgaben zu Arbeit, Behörden, Gesundheit, Wohnen, Mobilität, Bildung, Finanzen und digitalem Alltag",
+    "14 neue Leseaufgaben mit Alltagstexten und Anzeigen",
+    "8 neue Hörübungen mit typischen B1-Situationen",
+    "8 neue Schreibaufgaben und 8 neue Sprechszenarien",
+    "Dein bisheriger Lernstand und dein Fehlerbuch bleiben erhalten"
   ],
   "counts": {
-    "Grammatik": 43,
-    "Wortschatz": 44,
-    "Lesen": 31,
-    "Hören": 13,
-    "Schreiben": 15,
-    "Sprechen": 15
+    "Grammatik": 73,
+    "Wortschatz": 84,
+    "Lesen": 45,
+    "Hören": 21,
+    "Schreiben": 23,
+    "Sprechen": 23
   },
+  "delta": {
+    "Grammatik": 30,
+    "Wortschatz": 40,
+    "Lesen": 14,
+    "Hören": 8,
+    "Schreiben": 8,
+    "Sprechen": 8
+  },
+  "newItems": 108,
   "contentUrl": "./content/b1-content.json",
-  "minAppVersion": "3.0.0",
-  "force": false
+  "minAppVersion": "3.1.0",
+  "force": true,
+  "updateType": "required-content"
 }

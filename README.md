@@ -1,59 +1,43 @@
-# B1 Deutsch Trainer – PWA mit Content-Update-System
+# B1 Deutsch Trainer 3.1.0 – Lernpaket 2
 
-Die App muss nach der ersten Installation nicht neu installiert werden. Lerninhalte werden getrennt vom App-Code verwaltet.
+## Neue Version
+- App-Version: `3.1.0`
+- Content-Version: `2026.09.17.2`
+- Neue Übungen: `108`
+- Gesamtbestand: `269` Trainingseinheiten
 
-## Relevante Dateien
+## Update-Verhalten für bereits installierte PWAs
+Beim nächsten Start mit Internetverbindung lädt die PWA die aktuelle `index.html` und prüft `content/version.json` mit `cache: no-store`.
 
-- `content/b1-content.json` – alle Lerninhalte
-- `content/version.json` – Versionsmeldung und Release Notes
-- `index.html` – App und Update-Logik
-- `service-worker.js` – Offline-PWA
+Da `force: true` gesetzt ist, erscheint ein bildschirmfüllender Hinweis **„Erforderliches Lernpaket“**. Die App muss nicht neu installiert werden. Der Benutzer tippt nur auf **„Jetzt Lernpaket aktualisieren“**. Danach wird `content/b1-content.json` geladen und lokal gespeichert.
 
-## Neue Inhalte veröffentlichen
+Lernfortschritt, Statistik und Fehlerbuch bleiben im `localStorage` erhalten.
 
-1. `content/b1-content.json` erweitern oder austauschen.
-2. In `content/version.json` unbedingt `contentVersion` erhöhen.
-3. Optional Titel, Nachricht, Release Notes und Zähler anpassen.
-4. Commit + Push auf GitHub.
-5. GitHub Pages veröffentlicht das Update.
-6. Die installierte App prüft beim Start und später regelmäßig `version.json` ohne Cache.
-7. Der Nutzer sieht **NEUE INHALTE** und kann **Jetzt aktualisieren** oder **Später** wählen.
-8. Beim Update bleiben Lernfortschritt und Fehlerbuch erhalten.
+## Was wurde ergänzt?
+- +30 Grammatik
+- +40 Wortschatz
+- +14 Lesen
+- +8 Hören
+- +8 Schreiben
+- +8 Sprechen
 
-## Beispiel version.json
+## Deployment
+Diese Dateien im Repository ersetzen/ergänzen und anschließend auf den GitHub-Pages-Branch pushen:
 
-```json
-{
-  "contentVersion": "2026.09.18.1",
-  "publishedAt": "2026-09-18T10:00:00+02:00",
-  "title": "Update: Arbeit & Behörden",
-  "message": "35 neue Übungen sind verfügbar.",
-  "releaseNotes": [
-    "20 neue Aufgaben zu Arbeit und Beruf",
-    "10 neue Behörden-Dialoge",
-    "5 neue Schreibaufgaben"
-  ],
-  "counts": {
-    "Grammatik": 50,
-    "Wortschatz": 60,
-    "Lesen": 40,
-    "Hören": 20,
-    "Schreiben": 20,
-    "Sprechen": 20
-  },
-  "contentUrl": "./content/b1-content.json",
-  "minAppVersion": "3.0.0",
-  "force": false
-}
-```
+- `index.html`
+- `service-worker.js`
+- `content/b1-content.json`
+- `content/version.json`
 
-## Offline
+Die Icons und `manifest.webmanifest` können unverändert bleiben.
 
-Die zuletzt erfolgreich installierte Inhaltsversion bleibt offline nutzbar. Falls ein Update fehlschlägt, bleibt die bisherige Version aktiv.
+## Künftige reine Inhaltsupdates
+Wenn die Update-Logik 3.1.0 einmal verteilt ist, reichen für normale Inhaltsupdates in der Regel nur noch:
 
-## Versionsschema
+1. `content/b1-content.json` ändern
+2. `content/version.json` auf eine neue `contentVersion` setzen
+3. `newItems`, `delta`, `releaseNotes` und `counts` aktualisieren
+4. `force` je nach gewünschtem Verhalten auf `true` oder `false` setzen
+5. Commit + Push
 
-- App-Code: z. B. `3.0.0`
-- Inhalte: Datum + laufende Nummer, z. B. `2026.09.18.1`
-
-GitHub Pages: `https://empishaj.github.io/b1-app/`
+Die installierte App erkennt das Update beim nächsten Online-Start automatisch.
